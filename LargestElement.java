@@ -1,4 +1,4 @@
-1.Given an array of integers nums, return the value of the largest element in the array
+/*1.Given an array of integers nums, return the value of the largest element in the array
 
 
 Examples:
@@ -25,7 +25,7 @@ class Solution:
         return largestElement;
 
 
-JAVA CODE:
+JAVA CODE: */
 
 public class LargestElement {
     public static int findLargest(int[] nums) {
