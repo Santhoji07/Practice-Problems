@@ -40,3 +40,4 @@ class Solution {
         // left == right, pointing to the minimum element
         return left;
     }
+}
