@@ -46,3 +46,24 @@ Output: 4
 
 5. Input: 1800 2 1
 Output: 4*/
+
+#include <stdio.h>
+
+int main() {
+    int year, month, first_sunday, days, sundays = 0;
+    printf("Enter year, month (1-12), and first Sunday date: ");
+    scanf("%d %d %d", &year, &month, &first_sunday);
+
+    if (month == 2)
+        days = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) ? 29 : 28;
+    else if (month == 4 || month == 6 || month == 9 || month == 11)
+        days = 30;
+    else
+        days = 31;
+
+    for (int d = first_sunday; d <= days; d += 7)
+        sundays++;
+
+    printf("Total Sundays in %d/%d: %d\n", month, year, sundays);
+    return 0;
+}
