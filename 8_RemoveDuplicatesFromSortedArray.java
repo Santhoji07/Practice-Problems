@@ -48,7 +48,7 @@ Constraints:
 nums is sorted in non-decreasing order.*/
 
 
-class 8_RemoveDuplicatesFromSortedArray {
+class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
         int indexfornextnumber =1;
         for(int i=1; i<nums.length;i++){
