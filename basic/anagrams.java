@@ -47,7 +47,7 @@ Output: No */
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Main {
+public class anagrams {
 
     public static String areAnagrams(String str1, String str2) {
         // If lengths are different, they can't be anagrams
