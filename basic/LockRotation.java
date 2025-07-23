@@ -19,6 +19,23 @@ Explaination: The optimal shifts for pairs are:
 (2, 5) = 3, (3, 4) = 1, (4,3) = 1, (5,2) = 3. 
 So total shifts = 3+1+1+3 = 8.*/
 
+/*
+C++
+
+ int curr= 3658;
+ int final=9240;
+
+ int count=0;
+ while(count>0){
+    int first=curr%10;
+    int second=final%10;
+    count+-min(abs(first-second),10-abs(first-second));
+    curr/=10;
+    final/=10;
+    }
+    cout<<count;
+ */
+
 public class LockRotation {
 
     public static int minRotations(String R, String D) {
