@@ -1,4 +1,4 @@
-public class aa {
+public class secondlargest {
 
     public static void main(String[] args) {
         int[] arr = {5, 1, 9, 6, 3, 9}; // 
