@@ -26,18 +26,18 @@ nums[i] is either 0 or 1.
 
 class Consicutiveones {
     public int findMaxConsecutiveOnes(int[] arr) {
-        int ans=0;
-        int length=0;
+        int ans=0; // Variable to store the maximum count of consecutive 1's
+        int length=0;  // Variable to count the current length of consecutive 1's
 
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==1){
-                length++;
+        for(int i=0;i<arr.length;i++){  // Iterate through the array
+            if(arr[i]==1){  // If the current element is 1, increment the length
+                length++;  // Increment the count of consecutive 1's
             }else{
-                ans=Math.max(ans,length);
-                length=0;
+                ans=Math.max(ans,length);  // Update the maximum count if the current length is greater
+                length=0;  // Reset the length to 0 when a 0 is encountered
             } 
         }
-        ans=Math.max(ans,length);
-            return ans;
+        ans=Math.max(ans,length); // After the loop, check again to ensure the last segment of 1's is considered
+            return ans; 
     }
 }
