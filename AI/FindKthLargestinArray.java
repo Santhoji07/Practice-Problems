@@ -32,13 +32,13 @@ import java.util.PriorityQueue;
 class Solution {
     public int findKthLargest(int[] nums, int k) {
 
-        PriorityQueue<Integer> minHeap= new PriorityQueue<>();
+        PriorityQueue<Integer> minHeap= new PriorityQueue<>();  // Create a min-heap to store the k largest elements
         for(int i=0;i<nums.length;i++){
-            if(minHeap.size()<k || nums[i]>minHeap.peek())
+            if(minHeap.size()<k || nums[i]>minHeap.peek()) 
             minHeap.add(nums[i]);
-            if(minHeap.size()>k)
-            minHeap.poll();
+            if(minHeap.size()>k)  //
+            minHeap.poll();  // Remove the smallest element if the size exceeds k
         }
-        return minHeap.poll();
+        return minHeap.poll(); // Return the smallest element in the min-heap, which is the kth largest element in the array
     }
 }
