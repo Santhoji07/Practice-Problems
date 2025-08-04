@@ -44,7 +44,7 @@ Explanation: There is no cycle in the linked list.
  *     }
  * }
  */
-public class Solution {
+public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
 
         ListNode slow=head;
