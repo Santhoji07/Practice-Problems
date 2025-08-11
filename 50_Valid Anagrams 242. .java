@@ -35,7 +35,7 @@ class Solution {
             count[c-'a']++; // Convert char to index (0 for 'a', 1 for 'b', ..., 25 for 'z')
         }
         for(char c:t.toCharArray()){  // Decrease count for characters in t
-            count[c-'a']--;  //
+            count[c-'a']--;  
         }
 
         for(int i=0;i<26;i++){  // Check if all counts are zero
