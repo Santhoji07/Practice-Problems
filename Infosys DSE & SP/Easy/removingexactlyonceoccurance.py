@@ -5,12 +5,12 @@ I/P : number = "1321"
 digit = 1
 O/P: 321'''
 
-n= str(input())
+n= str(input()) 
 d= str(input())
 ans=[]
 
-for i in range(len(n)):
-    if n[i]==d:
-        t=n[0:i]+n[i+1:]
-        ans.append(t)
-print(max(ans))
+for i in range(len(n)): #looping through the length of string
+    if n[i]==d:          #checking for the digit in the string
+        t=n[0:i]+n[i+1:]#removing the digit from the string
+        ans.append(t)    #appending the new string to the list
+print(max(ans))          #printing the maximum value from the list
