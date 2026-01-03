@@ -62,8 +62,6 @@ class countmaxnumberoftimes {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(prioGreaterElement(arr, n));
-        
-        
+        System.out.println(prioGreaterElement(arr, n));    
     }
 }
