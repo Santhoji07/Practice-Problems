@@ -7,7 +7,7 @@ int reverseNumber(int n) {
     
     while(n != 0) {
         int digit = n % 10;          // Get last digit
-        reversed = reversed * 10 + digit;
+        reversed = reversed * 10 + digit;  
         n = n / 10;                  // Remove last digit
     }
     
