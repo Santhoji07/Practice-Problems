@@ -1,3 +1,5 @@
+# Function to count the number of lucky paths in a tree
+
 
 def luckyPath(n, edges, values, k):  #n: number of nodes
 
