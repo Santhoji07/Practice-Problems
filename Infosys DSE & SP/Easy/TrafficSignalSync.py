@@ -1,3 +1,10 @@
+# Function to perform traffic signal synchronization operations
+# n: number of traffic signals
+# D: minimum distance between selected signals
+# initial_flow: list of initial traffic flow values
+# operations: list of operations to perform
+#
+
 def trafficSignalSynchronization(n, D, initial_flow, operations):
     total_score = 0
 
