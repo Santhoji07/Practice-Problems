@@ -61,7 +61,7 @@ def maxWDMGroupSum(A, MIN_LEN, B, X):
                 continue
 
             # Count set bits in AND
-            if bin(curr_and).count('1') != B:
+            if bin(curr_and).count('1') != B:  
                 continue
 
             # XOR of endpoints
